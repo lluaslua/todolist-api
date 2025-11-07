@@ -3,9 +3,6 @@ package io.github.lluaslua.todolist_api.service;
 import io.github.lluaslua.todolist_api.model.Tasks;
 import io.github.lluaslua.todolist_api.repository.TasksRepository;
 import lombok.RequiredArgsConstructor;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 
 @RequiredArgsConstructor
 public class TasksService {
