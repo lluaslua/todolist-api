@@ -3,14 +3,16 @@ package io.github.lluaslua.todolist_api.service;
 import io.github.lluaslua.todolist_api.model.Tasks;
 import io.github.lluaslua.todolist_api.repository.TasksRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Service;
 
+@Service
 @RequiredArgsConstructor
 public class TasksService {
 
     private final TasksRepository tasksRepository;
 
-    private void saveTask(Tasks task) {
-        tasksRepository.save(task);
+    public Tasks saveTask(Tasks task) {
+       return tasksRepository.save(task);
     }
 
     public Tasks findById(long id){
